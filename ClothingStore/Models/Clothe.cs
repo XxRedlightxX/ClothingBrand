@@ -34,7 +34,7 @@ namespace ClothingStore.Models
         [Display(Name = "Quantité en stock")]
         public int? Quantite { get; set; }
 
-        [Required(ErrorMessage = "Le prix du livre est obligatoire.")]
+        [Required(ErrorMessage = "Le prix du vetement est obligatoire.")]
         [Column(TypeName = "decimal(18, 2)")]
         [Range(0.01, double.MaxValue, ErrorMessage = "Le prix doit être supérieur à zéro.")]
         [Display(Name = "Prix du livre")]

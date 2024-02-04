@@ -16,7 +16,7 @@
             chandail.clothes = new List<Clothe>();
             Clothe livre1 = new Clothe
             {
-                ClotheId = 1,
+         
                 ClotheName = "t-shirt",
                 Description = "test",
                 Quantite = 3,
