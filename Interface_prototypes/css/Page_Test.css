@@ -1,0 +1,22 @@
+.flex {
+    display: flex;
+   flex-wrap: wrap;
+   gap : 5em;
+   
+
+}
+
+.flex > div {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust according to your needs */
+    margin: 10px;
+    box-sizing: border-box;
+    max-width: 500px;
+}
+
+
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
