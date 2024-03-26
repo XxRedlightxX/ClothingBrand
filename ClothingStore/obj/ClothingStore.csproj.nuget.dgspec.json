@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\S\\Application_Web_3\\Projet_Personel\\ClothingStore\\ClothingStore.csproj": {}
+    "C:\\Users\\User\\ClothingBrand\\ClothingStore\\ClothingStore.csproj": {}
   },
   "projects": {
-    "F:\\S\\Application_Web_3\\Projet_Personel\\ClothingStore\\ClothingStore.csproj": {
+    "C:\\Users\\User\\ClothingBrand\\ClothingStore\\ClothingStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\S\\Application_Web_3\\Projet_Personel\\ClothingStore\\ClothingStore.csproj",
+        "projectUniqueName": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\ClothingStore.csproj",
         "projectName": "ClothingStore",
-        "projectPath": "F:\\S\\Application_Web_3\\Projet_Personel\\ClothingStore\\ClothingStore.csproj",
+        "projectPath": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\ClothingStore.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\S\\Application_Web_3\\Projet_Personel\\ClothingStore\\obj\\",
+        "outputPath": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,31 +42,35 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.15, )"
+              "version": "[7.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.15, )"
+              "version": "[7.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[7.0.15, )"
+              "version": "[7.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.15, )"
+              "version": "[7.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[7.0.15, )"
+              "version": "[7.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.15, )"
+              "version": "[7.0.17, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.12, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
