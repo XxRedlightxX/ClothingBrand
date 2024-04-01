@@ -11,6 +11,8 @@ namespace ClothingStore.Models
         [Required(ErrorMessage = "La catégorie du livre est obligatoire.")]
 
         public string NomCategorie { get; set; }
+
+
         public virtual ICollection<Clothe> clothes { get; set; }
     }
 }

@@ -21,11 +21,11 @@ namespace ClothingStore.Models
       
 
 
-        [Required(ErrorMessage = "Une description du livre est obligatoire.")]
+        [Required(ErrorMessage = "Une description  est obligatoire.")]
       
         [DataType(DataType.Text)]
         [Column(TypeName = "VARCHAR")]
-        [Display(Name = "Description du livre")]
+        [Display(Name = "Description de l'article")]
         [MaxLength(6000, ErrorMessage = "La description ne doit pas dépasser 6000 caractères.")]
         public string? Description { get; set; }
 
@@ -37,11 +37,11 @@ namespace ClothingStore.Models
         [Required(ErrorMessage = "Le prix du vetement est obligatoire.")]
         [Column(TypeName = "decimal(18, 2)")]
         [Range(0.01, double.MaxValue, ErrorMessage = "Le prix doit être supérieur à zéro.")]
-        [Display(Name = "Prix du livre")]
+        [Display(Name = "Prix du Article")]
         public decimal? Prix { get; set; }
 
-
         
+        public int CategorieId { get; set; }
         public virtual Categorie? Categorie { get; set; }
     }
 }

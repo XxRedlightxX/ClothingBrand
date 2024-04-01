@@ -21,9 +21,8 @@ namespace ClothingStore.Controllers
         // GET: Clothes
         public async Task<IActionResult> Index()
         {
-              return _context.Clothes != null ? 
-                          View(await _context.Clothes.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Clothes'  is null.");
+            var applicationDbContext = _context.Clothes.Include(c => c.Categorie);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Clothes/Details/5
@@ -35,6 +34,7 @@ namespace ClothingStore.Controllers
             }
 
             var clothe = await _context.Clothes
+                .Include(c => c.Categorie)
                 .FirstOrDefaultAsync(m => m.ClotheId == id);
             if (clothe == null)
             {
@@ -47,6 +47,7 @@ namespace ClothingStore.Controllers
         // GET: Clothes/Create
         public IActionResult Create()
         {
+            ViewData["CategorieId"] = new SelectList(_context.Categorie, "CategorieId", "NomCategorie");
             return View();
         }
 
@@ -55,7 +56,7 @@ namespace ClothingStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ClotheId,ClotheName,Description,Quantite,Prix")] Clothe clothe)
+        public async Task<IActionResult> Create([Bind("ClotheId,ClotheName,Description,Quantite,Prix,CategorieId")] Clothe clothe)
         {
             if (ModelState.IsValid)
             {
@@ -63,6 +64,7 @@ namespace ClothingStore.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CategorieId"] = new SelectList(_context.Categorie, "CategorieId", "NomCategorie", clothe.CategorieId);
             return View(clothe);
         }
 
@@ -79,6 +81,7 @@ namespace ClothingStore.Controllers
             {
                 return NotFound();
             }
+            ViewData["CategorieId"] = new SelectList(_context.Categorie, "CategorieId", "NomCategorie", clothe.CategorieId);
             return View(clothe);
         }
 
@@ -87,7 +90,7 @@ namespace ClothingStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ClotheId,ClotheName,Description,Quantite,Prix")] Clothe clothe)
+        public async Task<IActionResult> Edit(int id, [Bind("ClotheId,ClotheName,Description,Quantite,Prix,CategorieId")] Clothe clothe)
         {
             if (id != clothe.ClotheId)
             {
@@ -114,6 +117,7 @@ namespace ClothingStore.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CategorieId"] = new SelectList(_context.Categorie, "CategorieId", "NomCategorie", clothe.CategorieId);
             return View(clothe);
         }
 
@@ -126,6 +130,7 @@ namespace ClothingStore.Controllers
             }
 
             var clothe = await _context.Clothes
+                .Include(c => c.Categorie)
                 .FirstOrDefaultAsync(m => m.ClotheId == id);
             if (clothe == null)
             {

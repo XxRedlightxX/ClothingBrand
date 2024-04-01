@@ -2,7 +2,8 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-@Html.Partial("Page_Accueil")
+
+@await Html.PartialAsync("Page_Accueil")
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +13,24 @@
     <link rel="stylesheet" href="css/Page_Test.css">
 </head>
 <body>
+
+    <ul>
+    
+   
+    
+        <li><a class="" asp-area="" asp-controller="Clothes" asp-action="Create">bruh</a></li>
+        <li><a class="" asp-area="" asp-controller="Categories" asp-action="Create">bruh2</a></li>
+        </ul>
     @foreach(var clothe in Model)
     {
-        <p> @clothe.NomCategorie </p>
-    }
+       <p> @clothe.NomCategorie </p>
 
-    
+        @foreach(var item in clothe.clothes)
+        {
+            <p>@item.ClotheName</p>
+        }
+
+
+    }
 </body>
 </html>
