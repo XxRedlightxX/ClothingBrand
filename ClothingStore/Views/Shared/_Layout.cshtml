@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<ClothingStore.Models.Categorie>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +12,21 @@
 <body>
     @RenderBody()
     <div class="flex">
+        @foreach (var clothe in Model)
+        {
+            
+       
+            
         
 
+            @foreach (var item in clothe.clothes)
+            {
+                
 
+                <div class="images"><img class="logo" src="/photos/Dragon_B.jpg" alt="logo"> <p>@Html.DisplayFor(model => item.ClotheName)</p>  <p>@Html.DisplayFor(model => item.Prix)</p> <div class="overlay"> <br> </div></div>
+            }
 
-
-           
+        }
     </div>
 
     @RenderSection("Scripts", required: false)

@@ -21,16 +21,6 @@
         <li><a class="" asp-area="" asp-controller="Clothes" asp-action="Create">bruh</a></li>
         <li><a class="" asp-area="" asp-controller="Categories" asp-action="Create">bruh2</a></li>
         </ul>
-    @foreach(var clothe in Model)
-    {
-       <p> @clothe.NomCategorie </p>
-
-        @foreach(var item in clothe.clothes)
-        {
-            <p>@item.ClotheName</p>
-        }
-
-
-    }
+   
 </body>
 </html>
