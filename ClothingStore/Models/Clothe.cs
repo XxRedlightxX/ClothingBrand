@@ -40,8 +40,11 @@ namespace ClothingStore.Models
         [Display(Name = "Prix du Article")]
         public decimal? Prix { get; set; }
 
-        
-        public int CategorieId { get; set; }
+        [DataType(DataType.Upload)]
+        public byte[]? Photo { get; set; }
+
+        [ForeignKey(nameof(CategorieId))]
+        public int? CategorieId { get; set; }
         public virtual Categorie? Categorie { get; set; }
     }
 }

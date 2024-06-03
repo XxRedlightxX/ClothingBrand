@@ -1424,10 +1424,10 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/7.0.17": {
+      "Microsoft.EntityFrameworkCore.Tools/7.0.18": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "7.0.17"
+          "Microsoft.EntityFrameworkCore.Design": "7.0.18"
         },
         "compile": {
           "lib/net6.0/_._": {}
@@ -5892,17 +5892,17 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/7.0.17": {
-      "sha512": "/2BQZU0aALScLFrQE4omnjB84/+8BFViTAHRlL36Mu8M5XurjxqESsDOcZvRJnB/GecQH219Dt+mJHjGjh82qg==",
+    "Microsoft.EntityFrameworkCore.Tools/7.0.18": {
+      "sha512": "AuSrOsR/DN5OYuiaYxr+zk5bHgHB7o5TFK7ZbBp8rqKLw9eZSwgBfHi8pYvEMzvgw3z7TJvvcuDT5qVQbZcUUQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/7.0.17",
+      "path": "microsoft.entityframeworkcore.tools/7.0.18",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/_._",
-        "microsoft.entityframeworkcore.tools.7.0.17.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.7.0.18.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -11688,7 +11688,7 @@
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.17",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.17",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.17",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.17",
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.18",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.12",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
     ]
@@ -11713,7 +11713,6 @@
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11721,11 +11720,6 @@
           "targetAlias": "net7.0",
           "projectReferences": {}
         }
-      },
-      "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
       }
     },
     "frameworks": {
@@ -11758,7 +11752,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.17, )"
+            "version": "[7.0.18, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
@@ -11791,5 +11785,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Passage à une version antérieure du package détecté : Microsoft.EntityFrameworkCore.Design de 7.0.18 à 7.0.17. Référencez le package directement à partir du projet pour sélectionner une version différente. \r\n ClothingStore -> Microsoft.EntityFrameworkCore.Tools 7.0.18 -> Microsoft.EntityFrameworkCore.Design (>= 7.0.18) \r\n ClothingStore -> Microsoft.EntityFrameworkCore.Design (>= 7.0.17)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Design",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

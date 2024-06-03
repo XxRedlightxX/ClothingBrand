@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClothingStore.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240204214739_InitialCreate")]
+    [Migration("20240423000409_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -20,7 +20,7 @@ namespace ClothingStore.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.15")
+                .HasAnnotation("ProductVersion", "7.0.17")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -50,7 +50,7 @@ namespace ClothingStore.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClotheId"));
 
-                    b.Property<int?>("CategorieId")
+                    b.Property<int>("CategorieId")
                         .HasColumnType("int");
 
                     b.Property<string>("ClotheName")
@@ -62,6 +62,9 @@ namespace ClothingStore.Migrations
                         .IsRequired()
                         .HasMaxLength(6000)
                         .HasColumnType("VARCHAR");
+
+                    b.Property<byte[]>("Photo")
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<decimal?>("Prix")
                         .IsRequired()
@@ -82,7 +85,9 @@ namespace ClothingStore.Migrations
                 {
                     b.HasOne("ClothingStore.Models.Categorie", "Categorie")
                         .WithMany("clothes")
-                        .HasForeignKey("CategorieId");
+                        .HasForeignKey("CategorieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Categorie");
                 });

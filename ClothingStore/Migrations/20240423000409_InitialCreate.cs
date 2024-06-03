@@ -5,7 +5,7 @@
 namespace ClothingStore.Migrations
 {
     /// <inheritdoc />
-    public partial class pushModelToDatabase : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -33,7 +33,8 @@ namespace ClothingStore.Migrations
                     Description = table.Column<string>(type: "VARCHAR(6000)", maxLength: 6000, nullable: false),
                     Quantite = table.Column<int>(type: "int", nullable: false),
                     Prix = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    CategorieId = table.Column<int>(type: "int", nullable: true)
+                    Photo = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
+                    CategorieId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -42,7 +43,8 @@ namespace ClothingStore.Migrations
                         name: "FK_Clothes_Categorie_CategorieId",
                         column: x => x.CategorieId,
                         principalTable: "Categorie",
-                        principalColumn: "CategorieId");
+                        principalColumn: "CategorieId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

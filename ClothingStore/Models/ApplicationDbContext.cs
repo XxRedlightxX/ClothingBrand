@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using System.Reflection.Metadata;
+using System.Collections.Generic;
 
 namespace ClothingStore.Models
 {
@@ -12,6 +13,24 @@ namespace ClothingStore.Models
 
         public DbSet<Categorie> Categorie { get; set; }
         public DbSet<Clothe> Clothes { get; set; }
+
+
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+           
+
+
+
+            modelBuilder.Entity<Clothe>()
+                  .HasOne(c => c.Categorie)
+                   .WithMany(g => g.Clothes)
+                    .HasForeignKey(p => p.CategorieId)
+                    .IsRequired(false);
+
+          
+        }*/
 
         public void SeedData()
         {

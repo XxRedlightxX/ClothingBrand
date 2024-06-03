@@ -56,7 +56,7 @@ namespace ClothingStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ClotheId,ClotheName,Description,Quantite,Prix,CategorieId")] Clothe clothe)
+        public async Task<IActionResult> Create([Bind("ClotheId,ClotheName,Description,Quantite,Prix,Photo,CategorieId")] Clothe clothe)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace ClothingStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ClotheId,ClotheName,Description,Quantite,Prix,CategorieId")] Clothe clothe)
+        public async Task<IActionResult> Edit(int id, [Bind("ClotheId,ClotheName,Description,Quantite,Prix,Photo,CategorieId")] Clothe clothe)
         {
             if (id != clothe.ClotheId)
             {
