@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ClothingStore.Models.Categorie>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Example</title>
+    <link rel="stylesheet" href="css/dropmenu.css">
+    <!-- Bootstrap CSS -->
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a id="drop1" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort by <span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="drop1">
+                        @if (Model != null && Model.Any())
+                        {
+                            foreach (var item in Model)
+                            {
+                                <a class="dropdown-item" href="#">@item.NomCategorie</a>
+                            }
+                        }
+                        else
+                        {
+                            <a class="dropdown-item" href="#">No categories available</a>
+                        }
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

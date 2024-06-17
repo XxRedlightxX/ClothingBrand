@@ -4,16 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="Animation.js"></script>
     <link rel="stylesheet" href="css/Page_Test.css">
+    <script>
+            var i = 0
+        var images = [];
+        var time =5000;
+
+
+        images[0] = "/photos/naruto.jpg";
+
+        images[1] = "/photos/Dragon_B.jpg";
+
+        images[2] = "/photos/One_piece.jpg";
+
+        function changeImg() {
+            var slide = document.getElementById("slide");
+            var nextIndex = (i + 1) % images.length;
+            var currentImage = document.createElement("img");
+            var nextImage = document.createElement("img");
+
+            currentImage.src = slide.src;
+            nextImage.src = images[nextIndex];
+
+            slide.classList.add("hidden");
+
+            setTimeout(() => {
+                slide.src = nextImage.src;
+                slide.classList.remove("hidden");
+                i = nextIndex;
+            }, 1000); // Match the transition duration
+
+            setTimeout(changeImg, time);
+        }
+        function myMove() {
+            var elem = document.getElementById("movingText");
+            var pos = 0;
+            var direction = 1; // 1 for right, -1 for left
+
+            function frame() {
+                if (pos >= 1700 || pos < 0) {
+                    direction *= -1; // Change direction
+                }
+                pos += direction;
+                elem.style.left = pos + 'px';
+                requestAnimationFrame(frame); // Recursively call frame for smoother animation
+            }
+
+            frame();
+        }
+
+        window.onload = myMove; // Call myMove when the page loads
+
+        window.onload = changeImg;
+    </script>
+
+   
+    
 </head>
+
+<style>
+    #slide {
+        width: 55%;
+        height: 55%;
+        transition: opacity 1s ease-in-out;
+        position: relative;
+    }
+
+    .hidden {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .slideshow{
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100vh; /* Full viewport height */
+
+    }
+
+    
+
+
+</style>
+
+<header><div class="menu"></div><a href="default.asp"></a><img class="logs" src="/photos/store.png" alt="logo"></a> </div>
+    <nav>
+            <ul class="nav_links">
+                <li><a href="*">Acheter Chandail</a>    </li>
+                <li><a href="*">Sinscrire</a>    </li>
+                <li><a href="*">Se connecter</a>    </li>
+            </ul>
+    </nav>
+    <a class="cta" href="*"><button>Contact</button></a>
+</header>
+
+<div id="movingText"> <p>50 % off for new customers</p></div>
+
+
+
+
+<div class="slideshow">
+    <img id="slide" name="slide" src="/photos/people.jpg" />
+</div>  
+
 <body>
     <div class="flex">
-        <div class="images"><img class="logo" src="/photos/store.png" alt="logo"></div>
-        <div class="images"><img class="logo" src="/photos/store.png" alt="logo"></div>
-        <div class="images"><img class="logo" src="/photos/store.png" alt="logo"></div>
+        <div class="images"><img class="logo" src="/photos/naruto.jpg" alt="logo"></div>
+        <div class="images"><img class="logo" src="/photos/Dragon_B.jpg" alt="logo"></div>
+        <div class="images"><img class="logo" src="/photos/One_piece.jpg" alt="logo"></div>
         <div class="images"><img class="logo" src="/photos/store.png" alt="logo"></div>
         <div class="images"><img class="logo" src="/photos/store.png" alt="logo"></div>
         <div class="images"><img class="logo" src="/photos/store.png" alt="logo"></div>
     </div>
 </body>
+
 </html>

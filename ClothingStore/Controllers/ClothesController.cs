@@ -25,6 +25,9 @@ namespace ClothingStore.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
+        
+       
+
         // GET: Clothes/Details/5
         public async Task<IActionResult> Details(int? id)
         {

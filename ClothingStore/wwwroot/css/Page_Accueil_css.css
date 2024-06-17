@@ -46,3 +46,7 @@ header {
     transition: 0.3s;
 }
 
+.bar {
+    display: inline-block;
+}
+

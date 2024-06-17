@@ -1,0 +1,10 @@
+﻿.container {
+    max-width: 60px; /* Set your desired width */
+    margin: 0 auto; /* Center the container */
+   
+}
+
+.nav-item dropdown {
+
+    float : left
+}

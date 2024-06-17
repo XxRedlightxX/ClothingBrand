@@ -11,12 +11,13 @@
         {
             Categorie chandail = new Categorie { NomCategorie = "Chandails" };
             Categorie pantalon = new Categorie { NomCategorie = "Pantalons" };
+            Categorie Chapeau = new Categorie { NomCategorie = "Chapeau" };
 
 
             chandail.clothes = new List<Clothe>();
             Clothe livre1 = new Clothe
             {
-         
+
                 ClotheName = "t-shirt",
                 Description = "test",
                 Quantite = 3,
@@ -29,8 +30,10 @@
             chandail.clothes.Add(livre1);
             listehabits.Add(livre1);
 
-            return new Categorie?[] { chandail, pantalon };
+            return new Categorie?[] { chandail, pantalon, Chapeau };
         }
-         
+       
+    
+
 }
 }

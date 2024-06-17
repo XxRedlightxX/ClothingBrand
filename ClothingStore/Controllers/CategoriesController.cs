@@ -26,6 +26,8 @@ namespace ClothingStore.Controllers
                           Problem("Entity set 'ApplicationDbContext.Categorie'  is null.");
         }
 
+      
+
         // GET: Categories/Details/5
         public async Task<IActionResult> Details(int? id)
         {

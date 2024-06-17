@@ -28,9 +28,12 @@ namespace ClothingStore.Controllers
             return View(listCategorie);
         }
 
-       
+      
+   
 
-        public IActionResult ajouterPoste()
+
+
+    public IActionResult ajouterPoste()
         {
             ViewData["CategorieId"] = new SelectList(_context.Categorie, "CategorieId", "NomCategorie");
             return View();
