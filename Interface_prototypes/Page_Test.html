@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="Animation.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/Page_Test.css">
+    
     <script>
             var i = 0
         var images = [];
@@ -54,9 +56,11 @@
             frame();
         }
 
-        window.onload = myMove; // Call myMove when the page loads
-
-        window.onload = changeImg;
+        window.onload = function() {
+          
+            changeImg();
+            myMove();
+        };
     </script>
 
    
@@ -65,8 +69,10 @@
 
 <style>
     #slide {
-        width: 55%;
-        height: 55%;
+        width: 1700px;
+        height: 70%;
+        padding-left: 10px;
+        margin-bottom: 60px;
         transition: opacity 1s ease-in-out;
         position: relative;
     }
@@ -102,7 +108,9 @@
     <a class="cta" href="*"><button>Contact</button></a>
 </header>
 
-<div id="movingText"> <p>50 % off for new customers</p></div>
+<div id="movingText"> <p>50 % off for new customers</p>d</div>
+
+
 
 
 
@@ -113,12 +121,14 @@
 
 <body>
     <div class="flex">
-        <div class="images"><img class="logo" src="/photos/naruto.jpg" alt="logo"></div>
-        <div class="images"><img class="logo" src="/photos/Dragon_B.jpg" alt="logo"></div>
-        <div class="images"><img class="logo" src="/photos/One_piece.jpg" alt="logo"></div>
-        <div class="images"><img class="logo" src="/photos/store.png" alt="logo"></div>
-        <div class="images"><img class="logo" src="/photos/store.png" alt="logo"></div>
-        <div class="images"><img class="logo" src="/photos/store.png" alt="logo"></div>
+        <div class="images"><img class="logo" src="/photos/naruto.jpg" alt="logo"><p><strong>Chandail Naruto</strong></p>
+            <p>79.99$</p>
+        </div>
+        <div class="images"><img class="logo" src="/photos/Dragon_B.jpg" alt="logo"><p><strong>Chandail DragonBall</strong></p>
+            <p>22.99$</p></div>
+        <div class="images"><img class="logo" src="/photos/One_piece.jpg" alt="logo"><p><strong>Chandail One piece</strong></p>
+            <p>13.99$</p></div>
+       
     </div>
 </body>
 

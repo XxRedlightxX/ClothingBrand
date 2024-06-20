@@ -27,7 +27,10 @@
             frame();
         }
 
-        window.onload = myMove; // Call myMove when the page loads
+        window.onload = function() {
+            myMove();
+            changeImg();
+        }; // Call myMove when the page loads
 </script>
 <body>
    
