@@ -1,0 +1,51 @@
+.Conteneur_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    float: left;
+    
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Conteneur_login > div {
+    margin-left: 360px;
+    padding: 20px;
+}
+
+.info, .info2 {
+    border-style: ridge;
+
+}
+
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+}
+
+.row > div {
+    margin-right: 20px; /* Space between the fields */
+}
+
+.row label, .row input {
+    margin: 5px; /* Margin around labels and inputs */
+}

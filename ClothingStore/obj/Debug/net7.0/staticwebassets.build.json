@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Si0LNY3/QYQGi+ozUOjZuG+WdSuP050IfHhLO2NvtnQ=",
+  "Hash": "CoIcYlZWaTmwoKSMQNp0RabrZO+OxcfCQGtd1WIOUkE=",
   "Source": "ClothingStore",
   "BasePath": "_content/ClothingStore",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\dropmenu.css"
+    },
+    {
+      "Identity": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\css\\Homepage.css",
+      "SourceId": "ClothingStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\",
+      "BasePath": "_content/ClothingStore",
+      "RelativePath": "css/Homepage.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Homepage.css"
     },
     {
       "Identity": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\css\\Page_Accueil_css.css",

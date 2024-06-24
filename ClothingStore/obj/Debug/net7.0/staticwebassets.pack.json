@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\ClothingStore.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\css\\Homepage.css",
+      "PackagePath": "staticwebassets\\css\\Homepage.css"
+    },
+    {
       "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\css\\Page_Accueil_css.css",
       "PackagePath": "staticwebassets\\css\\Page_Accueil_css.css"
     },
