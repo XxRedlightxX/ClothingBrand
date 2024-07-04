@@ -64,8 +64,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/ClothingBrand/ClothingStore/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/User/ClothingBrand/ClothingStore/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/ClothingBrand/ClothingStore/Views/Home/Privacy.cshtml]
@@ -84,8 +84,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/ClothingBrand/ClothingStore/Views/Shared/Page_Accueil.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhZ2VfQWNjdWVpbC5jc2h0bWw=
+[C:/Users/User/ClothingBrand/ClothingStore/Views/Shared/footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/ClothingBrand/ClothingStore/Views/Shared/slider.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXHNsaWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/ClothingBrand/ClothingStore/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -99,6 +103,18 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/User/ClothingBrand/ClothingStore/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/ClothingBrand/ClothingStore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-a08mc3ju0h
+
+[C:/Users/User/ClothingBrand/ClothingStore/Views/Shared/menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXG1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8o4chijt15
+
+[C:/Users/User/ClothingBrand/ClothingStore/Views/Shared/Page_Accueil.razor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhZ2VfQWNjdWVpbC5yYXpvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-h1edomfy41
 
 [C:/Users/User/ClothingBrand/ClothingStore/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

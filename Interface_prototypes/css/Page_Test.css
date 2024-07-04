@@ -27,13 +27,13 @@
     
 }
 
-.log > img {
+/*.log > img {
     height: 50px;
     width: 50px;
     background-color: black;
-}
+}*/
 
-li, a, button {
+/*li, a, button {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -44,37 +44,39 @@ li, a, button {
 }
 
 header {
+    overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
-    position: sticky;
-    top: 0px;
-     width: 100%;/* Set the navbar to fixed position */
     
-    padding: 10px 10%; /* Reduced padding */
+    padding: 10px 10%; 
     background-color: black;
-}
+} */
+
 
 .logo {
     cursor: pointer;
     height: 50px; /* Adjust logo size if needed */
 }
-.logs {
+/*.logs {
     cursor: pointer;
-    height: 40px; /* Set the desired height */
+    height: 40px; 
     width: auto;
-    background-color: black; /* Maintain aspect ratio */
-}
+    background-color: black; 
+}*/
 
 
-.nav_links {
+/*.nav_links {
     list-style: none;
 }
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 10px; /* Reduced padding */
+    padding: 0px 10px;
 }
 
 .nav_links li a {
@@ -83,7 +85,7 @@ header {
 
 .cta button {
     padding: 10px 20px;
-}
+}*/
 
 .flex {
     display: flex;

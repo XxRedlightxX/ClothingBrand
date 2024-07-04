@@ -377,6 +377,7 @@ C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\staticwebassets\msbui
 C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\scopedcss\Views\Shared\Page_Accueil.razor.cshtml.rz.scp.css
 C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\scopedcss\bundle\ClothingStore.styles.css
 C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\scopedcss\projectbundle\ClothingStore.bundle.scp.css
@@ -386,3 +387,5 @@ C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\refint\ClothingStore.
 C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\ClothingStore.pdb
 C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\ClothingStore.genruntimeconfig.cache
 C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\ref\ClothingStore.dll
+C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\scopedcss\Views\Home\Index.cshtml.rz.scp.css
+C:\Users\User\ClothingBrand\ClothingStore\obj\Debug\net7.0\scopedcss\Views\Shared\menu.cshtml.rz.scp.css

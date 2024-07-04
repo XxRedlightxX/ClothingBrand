@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\Homepage.css"
     },
     {
+      "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
       "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\css\\Page_Accueil_css.css",
       "PackagePath": "staticwebassets\\css\\Page_Accueil_css.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\css\\dropmenu.css",
       "PackagePath": "staticwebassets\\css\\dropmenu.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
     },
     {
       "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\css\\site.css",
@@ -37,6 +45,10 @@
       "PackagePath": "staticwebassets\\img\\One_piece.jpg"
     },
     {
+      "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\img\\google.jpg",
+      "PackagePath": "staticwebassets\\img\\google.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\img\\naruto.jpg",
       "PackagePath": "staticwebassets\\img\\naruto.jpg"
     },
@@ -51,6 +63,10 @@
     {
       "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\img\\store.png",
       "PackagePath": "staticwebassets\\img\\store.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
       "Id": "C:\\Users\\User\\ClothingBrand\\ClothingStore\\wwwroot\\js\\site.js",

@@ -5,36 +5,45 @@
     ViewData["Title"] = "Home Page";
 }
 
-@await Html.PartialAsync("Page_Accueil")
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/Page_Test.css">
+  
 
-     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    
 </head>
 <body>
-
+   
     <ul>
 
 
-        <li><a class="" asp-area="" asp-controller="Home" asp-action="ajouterPoste">Ajouter un Poste</a></li>
+        <li></li>
+
+       
         
         
 
      
         
     </ul>
+    <div id="movingText">
+        <p>50 % off for new customers</p>
+    </div>
 
+    
 
-    <div class="bar" ><
+    <div class="bar" >
         @await Component.InvokeAsync("CategorieMenu")
       </div>
-    
+    <a class="" asp-area="" asp-controller="Home" asp-action="ajouterPoste">Ajouter un Poste</a>
+    <a class="" asp-area="" asp-controller="Home" asp-action="footer">footer2</a>
+    <a class="" asp-area="" asp-controller="Home" asp-action="menu">menu2</a>
+    <a class="" asp-area="" asp-controller="Home" asp-action="Login">Ajouter</a>
+
+   
         <div class="flex">
        
         
@@ -62,12 +71,17 @@
                     }
                 }
             }
-        }
+        
     </div>
 
-    
 
 
    
+
+    
+   
+
+   
 </body>
+
 </html>

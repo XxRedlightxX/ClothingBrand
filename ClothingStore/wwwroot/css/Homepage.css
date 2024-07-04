@@ -1,4 +1,4 @@
-﻿.conteneur {
+﻿/*.conteneur {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -21,18 +21,18 @@ img {
 
 .categories {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 50vh; /* Full viewport height */
-    border: 1px solid black; /* Just for visualization */
+    justify-content: center; 
+    align-items: center;
+    height: 50vh;
+    border: 1px solid black; 
     flex-direction: column;
-    /* Stack items vertically */
+  
 }
 
 .typecate {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    margin: 10px; /* Just for visualization */
+    justify-content: center; 
+    margin: 10px; 
 }
 
 
@@ -84,3 +84,4 @@ footer {
     background-color: black;
     color: white
 }
+*/

@@ -28,12 +28,30 @@ namespace ClothingStore.Controllers
             return View(listCategorie);
         }
 
-      
-   
+        public IActionResult Login()
+        {
+            
+            return View();
+        }
+
+        public IActionResult menu()
+        {
+
+            return View();
+        }
+
+        public IActionResult footer()
+        {
+
+            return View();
+        }
 
 
 
-    public IActionResult ajouterPoste()
+
+
+
+        public IActionResult ajouterPoste()
         {
             ViewData["CategorieId"] = new SelectList(_context.Categorie, "CategorieId", "NomCategorie");
             return View();
